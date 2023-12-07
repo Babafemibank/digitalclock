@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="BABAFEMI.png" type="image/x-icon">
+    
+    <title>Digital clock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="digital_container">
+
+
+<div id="digital">
+
+
+
+
+<div class="circle" style="--color: rgb(21, 248, 0);">
+<div class="dots h_dot"></div>
+<svg viewBox="0 0 150 150">
+    <circle cx="70" cy="70" r="70"></circle>
+    <circle cx="70" cy="70" r="70" id="hrs"></circle>
+</svg>
+<div id="hours"></div>
+</div>
+
+
+
+
+<div class="circle" style="--color: rgb(248, 245, 245);">
+    <div class="dots m_dot"></div>
+    <svg viewBox="0 0 150 150">
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="min"></circle>
+    </svg>
+    <div id="minutes"></div>
+    </div>
+
+
+
+    <div class="circle rec" >
+        <p id="seconds"></p>
+    </div>
+
+
+
+<div class="class ap">
+    <div id="ampm">AM</div>
+</div>
+</div>
+        </div>
+        
+<div id="zone">
+    <h3>Select a Time Zone</h3>
+    <div class="select" >
+   <select name="time zone" id="utc" >
+   <option value="local" selected >Local Time</option>
+   <option value="1">West central Africa(UTC +1:00)</option>
+   <option value="2">Helsinki, Kyiv, Riga, Sofia(UTC +2:00)</option>
+   <option value="3">Moscow, St.Petersburg(UTC +3:00)</option>
+   <option value="4">Abu Dhabi, Muscat(UTC +4:00)</option>
+   <option value="5">Ashgabat, Tashkent(UTC +5:00)</option>
+   <option value="6">Dhaka, Omsk, Astana(UTC +6:00)</option>
+   <option value="7">Barnaul, Gurno-Altaysl(UTC +7:00)</option>
+   <option value="8">Beijing,Chongqing,Hong Kong(UTC +8:00)</option>
+   <option value="9">Osaka, Sapporo, Tokyo(UTC +9:00)</option>
+   <option value="10">Canberra, Melbourne, Sydney(UTC +10:00)</option>
+   <option value="11">Norfolk Island(UTC +11:00)</option>
+   <option value="12">Coordinated Universal time +12 (UTC +12:00)</option>
+   <option value="13">Coordinated Universal time +13 (UTC +13:00)</option>
+   <option value="14">Kiritimati Island (UTC +14:00)</option>
+   <option value="0">Coordinated Universal Time (UTC 00:00)</option>
+   <option value="-1">Azores (UTC -1:00)</option>
+   <option value="-2">Coordinated Universal time -2 (UTC -2:00)</option>
+   <option value="-3">city of Buenos Aires(UTC -3:00)</option>
+   <option value="-4">Atlantic time(Canada) (UTC -4:00)</option>
+   <option value="-5">Mountain Time(US & Canada) (UTC -5:00)</option>
+   <option value="-6">Central Time(US & Canada) (UTC -6:00)</option>
+   <option value="-7">mountain Time (US & Canada) (UTC -7:00)</option>
+   <option value="-8">Coordinated Universal time -8 (UTC -8:00)</option>
+   <option value="-9">Coordinated Universal time -9 (UTC -9:00)</option>
+   <option value="-10">Aleutian Island(UTC -10:00)</option>
+   <option value="-11">Coordinated Universal time -11 (UTC -11:00)</option>
+   <option value="-12">International Date Line West(UTC -12:00)</option>
+   </select>
+<span class="custom_arrow"></span>
+</div>
+</div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
